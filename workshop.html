@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        input,
+        select,
+        button,
+        textarea {
+            margin-left: 20px;
+        }
+
+        td {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Create New Seminar</a>
+        </div>
+    </nav>
+    <div class="ms-5">
+        <form action="POST">
+            <table>
+                <tr>
+                    <td><label for="kode">Kode</label></td>
+                    <td class="titikDua">:</td>
+                    <td><input type="text" id="kode"></td>
+                </tr>
+                <tr>
+                    <td><label for="namaKegiatan">Nama Kegiatan</label></td>
+                    <td class="titikDua">:</td>
+                    <td><input type="text" id="namaKegiatan" style="width: 1080px;"></td>
+                </tr>
+                <tr>
+                    <td><label for="tanggalMulai">Tanggal Mulai</label></td>
+                    <td class="titikDua">:</td>
+                    <td><input type="date" id="tanggalMulai" style="width: 250px;"></td>
+                </tr>
+                <tr>
+                    <td><label for="tanggalAkhir">Tanggal Akhir</label></td>
+                    <td class="titikDua">:</td>
+                    <td><input type="date" id="tanggalAkhir" style="width: 250px;"></td>
+                </tr>
+                <tr>
+                    <td><label for="biaya">Biaya</label></td>
+                    <td class="titikDua">:</td>
+                    <td><input type="input" id="biaya" style="width: 400px;"></td>
+                </tr>
+                <tr>
+                    <td><label for="tempat">Tempat</label></td>
+                    <td class="titikDua">:</td>
+                    <td><input type="input" id="tempat"></td>
+                </tr>
+                <tr>
+                    <td><label for="latitude">Latitude</label></td>
+                    <td class="titikDua">:</td>
+                    <td><input type="input" id="latitude"></td>
+                </tr>
+                <tr>
+                    <td><label for="longtitude">Longtitude</label></td>
+                    <td class="titikDua">:</td>
+                    <td><input type="input" id="longtitude"></td>
+                </tr>
+                <tr>
+                    <td><label for="jenisKegiatan">Jenis Kegiatan</label></td>
+                    <td class="titikDua">:</td>
+                    <td>
+                        <select name="status" id="jenisKegiatan" style="width: 250px;">
+                            <option value="">Select</option>
+                            <option value="Mahasiswa">Bootcamp</option>
+                            <option value="Kontrak">Webinar</option>
+                            <option value="Tetap">Mentoring</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pic">PIC</label></td>
+                    <td class="titikDua">:</td>
+                    <td><input type="input" id="pic" style="width: 250px;"></td>
+                </tr>
+                <tr>
+                    <td><label for="deskripsi">Deskripsi</label></td>
+                    <td class="titikDua">:</td>
+                    <td><textarea name="deskripsi" id="deskripsi" cols="140" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-success">Simpan</button></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
